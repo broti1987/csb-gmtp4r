@@ -11,8 +11,8 @@ canvas.height = window.innerHeight;
 //canvas.fillStyle = pink;
 
 window.addEventListener("wheel", (event) => {
-  if (event.deltaY > 0) speed = speed + 0.0025;
-  else speed = speed - 0.0025;
+  if (event.deltaY > 0) speed = speed + 0.025;
+  else speed = speed - 0.025;
 
   if (speed < 0) speed = 0.0005;
 });
