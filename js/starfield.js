@@ -51,7 +51,7 @@ class Star {
     c.stroke();
   }
 }
-let speed = 0.002;
+let speed = 0.005;
 let stars = [];
 for (let i = 0; i < 100; i++) stars.push(new Star());
 
