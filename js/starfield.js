@@ -3,6 +3,7 @@ const c = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+//canvas.fillStyle = "rgba(100, 0, 0, 100)";
 /*window.addEventListener("wheel", (event) => {
   if (event.deltaY < 0) speed = 0.025;
   //else speed *= 0.5;
@@ -10,7 +11,7 @@ canvas.height = window.innerHeight;
 //canvas.fillStyle = pink;
 
 window.addEventListener("wheel", (event) => {
-  if (event.deltaY > 0) speed = speed + 0.000025;
+  if (event.deltaY > 0) speed = speed + 0.00025;
   else speed = speed - 0.000025;
 
   if (speed < 0) speed = 0.0005;
@@ -55,7 +56,7 @@ let stars = [];
 for (let i = 0; i < 100; i++) stars.push(new Star());
 
 c.fillStyle = "rgba(0, 0, 0, 0.1)";
-c.strokeStyle = "rgba(255, 255, 255,70)";
+c.strokeStyle = "rgba(255, 175, 250,70)";
 c.translate(canvas.width / 2, canvas.height / 2);
 function draw() {
   requestAnimationFrame(draw);
@@ -70,4 +71,6 @@ function draw() {
     s.show();
   }
 }
+
+//c.globalCompositeOperation = "screen";
 draw();
